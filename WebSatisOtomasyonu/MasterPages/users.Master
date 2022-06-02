@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="users.master.cs" Inherits="WebSatisOtomasyonu.MasterPages.users" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="../Style/MasterPage.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            text-align: center;
+        }
+
+        .auto-style2 {
+            text-align: left;
+            vertical-align: bottom;
+            margin-top: 20px;
+        }
+
+        .auto-style6 {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="height: 120px; width: 1400px; margin: auto;" class="auto-style1">
+            <div style="height: 100px; width: 128px; margin-left:10px" class="auto-style2";>
+                <a href="AnaSayfa.aspx"><asp:Image ID="Image1" runat="server" Height="100px" ImageUrl="~/pics/logo.png"  /></a>
+            </div>
+        </div>
+        <div style="height: 10px"></div>
+        <div id="menu" style="height: 50px; width:auto; background-color:#191a27">
+            <div style="margin: auto; height: 50px; width: 1080px">
+                <ul>
+                    <li class="auto-style6"><a href="AnaSayfa.aspx">Ana Sayfa</a></li>
+                    <li><a href="#"><span class="auto-style6">Ürünler ></span></a>
+                        <ul>
+                            <li><a href="UrunEkle.aspx"><span class="auto-style6">Yeni Ürün Ekle</span></a></li>                            
+                            <li><a href="Urunler.aspx"><span class="auto-style6">Ürün Bilgileri</span></a></li>      
+                        </ul>
+                    </li>
+                    <li><a href="#"><span class="auto-style6">Kategoriler ></span></a>
+                        <ul>
+                            <li><a href="KategoriEkle.aspx"><span class="auto-style6">Kategori Ekle</span></a></li>
+                            <li><a href="KategoriSil.aspx"><span class="auto-style6">Kategori Sil</span></a></li>
+                            <li><a href="KategoriGuncelle.aspx" style="font-size: 12px; font-weight: bold;">Kategori Güncelle</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="TransferYap.aspx"><span class="auto-style6">Transfer Yap</span></a>
+                        <%--<ul>
+                            <li><a href="#">Tedarikçi Ekle</a></li>
+                            <li><a href="#">Tedarikçi Sil</a></li>
+                            <li><a href="#" style="font-size:13px; font-weight:bold">Tedarikçi Güncelle</a></li>
+                        </ul>--%>
+                    </li>
+                    <li><a href="#"><span class="auto-style6">Tedarikçiler ></span></a>
+                        <ul>
+                            <li><a href="TedarikciEkle.aspx"><span class="auto-style6">Tedarikçi Ekle</span></a></li>
+                            <li><a href="TedarikciSil.aspx"><span class="auto-style6">Tedarikçi Sil</span></a></li>
+                            <li><a href="TedarikciGuncelle.aspx" style="font-size:13px; font-weight:bold">Tedarikçi Güncelle</a></li>
+                        </ul>
+                    </li> 
+                    <li><a href="#"><span class="auto-style6">Varyasyonlar ></span></a>
+                        <ul>
+                            <li><a href="Renkler.aspx"><span class="auto-style6">Renkler</span></a></li>
+                            <li><a href="Bedenler.aspx"><span class="auto-style6">Bedenler</span></a></li>               
+                            <li><a href="Subeler.aspx"><span class="auto-style6">Şubeler</span></a></li>               
+                        </ul>
+                    </li>
+                    <li class="auto-style6"><a href="Kasiyerler.aspx">Kasiyerler</a></li>
+                    <li class="auto-style6"><a href="SatisGecmisiAdmin.aspx">Satış Geçmişi</a></li>
+                    <li class="auto-style6">
+                        <asp:LinkButton ID="lbtnCikisYap" runat="server" OnClick="lbtnCikisYap_Click">Güvenli Çıkış</asp:LinkButton></li>                   
+                </ul>
+            </div>
+        </div>
+        <div style="height: 20px"></div>
+        <div style="height: 100%; width: 1400px; margin: auto; background-color: #25273a;border-radius:20px">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div style="height: 20px"></div>
+        <div style="height: 50px; width: 100%; margin: auto; background-color:#191a27"></div>
+        <div style="height: 100px; width: 100%; margin: auto; background-color:#383b50"></div>
+    </form>
+</body>
+</html>
+
+
+

@@ -1,0 +1,24 @@
+﻿body {
+    background-color: #383b50;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#tableGiris a {
+    text-decoration: none;
+    display: block;
+    
+}
+
+
+    #tableGiris a:hover{
+        background-color: #808080;
+        color: white;
+        
+    }
+
+
+    
